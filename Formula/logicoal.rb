@@ -2,19 +2,19 @@ class Logicoal < Formula
   desc "AI-powered CLI coding assistant from Coals.ai"
   homepage "https://coals.ai"
   license "MIT"
-  version "2.2.8"
+  version "2.2.9"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://coals.ai/downloads/logicoal/logicoal-#{version}-macos-arm64.tar.gz"
-      sha256 "09c5d6716b766b1ab72425ca6d294ce4f58d821c7f2841349bbb5c0de233aff8"
+      sha256 "6546330244e204b48b095a9e2e600fd676ced8da9ec6b688aac5b71839605b9c"
 
       def install
         bin.install "logicoal-macos-arm64" => "logicoal"
       end
     else
       url "https://coals.ai/downloads/logicoal/logicoal-#{version}-macos-x64.tar.gz"
-      sha256 "cdca4ead5d38bdb0755b5f4034c18de54510e2786f0f1f2a7a4c24acb1f3b690"
+      sha256 "3fbd7194e4a6dd65117dfdc10df272edaa37801c5c606bde2b920a548a044039"
 
       def install
         bin.install "logicoal-macos-x64" => "logicoal"
@@ -25,14 +25,14 @@ class Logicoal < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://coals.ai/downloads/logicoal/logicoal-#{version}-linux-arm64.tar.gz"
-      sha256 "f7525c385e7664c16511b61b47763c9e36c3e824fd1d8240363e945d5b663706"
+      sha256 "2aad619c6c5d9b0a2b9618f4c819c3f0d95978d344a001e4649ef950e802a37f"
 
       def install
         bin.install "logicoal-linux-arm64" => "logicoal"
       end
     else
       url "https://coals.ai/downloads/logicoal/logicoal-#{version}-linux-x64.tar.gz"
-      sha256 "51f61556a530f9a76c7894fa93dcde73ee207122477937c7e2b4dca7ae8fe409"
+      sha256 "41782787e3f13f71009051b6a890c1b2980bab809727e29ca48f91c47484d3ae"
 
       def install
         bin.install "logicoal-linux-x64" => "logicoal"
